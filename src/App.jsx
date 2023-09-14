@@ -1,15 +1,20 @@
 
 import './App.css'
+import Blogs from './components/Blogs/Blogs'
+import Bookmarks from './components/Bookmarks/Bookmarks'
 import Header from './components/Header/Header'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      
-      <h1 className=' text-4xl'>Knowladge Cafe</h1>
+
       <Header></Header>
+      <div className=' md:flex'>
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </div>
     </>
   )
 }
